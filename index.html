@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ACTIVATE - FRONTPAGE</title>
+
+ 
+   <style>
+       
+       body{
+          font-size: 75.5%;
+	font-family: monospace;
+	color: #333;
+	text-align: center;
+       }
+       #iphone{
+            height: 700px;
+            position: relative;
+            align-content: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+       }
+        #logo{
+            height: 80px;
+            margin-top: -600px;
+            position: relative;
+            align-content: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+       #btn1{
+            position: relative;
+            align-content: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+       } 
+       #btn2{
+            position: relative;
+            align-content: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+       } 
+       #btn3{
+            position: relative;
+            align-content: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+       } 
+       #btn4{
+             position: relative;
+            align-content: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+       } 
+       #btn5{
+             position: relative;
+            align-content: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+       } 
+       #btn6{
+             position: relative;
+            align-content: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+       } 
+       #btn7{
+            position: relative;
+            align-content: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+       } 
+       #btn8{
+            position: relative;
+            align-content: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+       }
+       
+       #txt{
+            position: relative;
+            align-content: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+           width: 200px;
+           margin-top: -6%;
+       }
+       #btnBack{
+            position: relative;
+            align-content: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+       } 
+    
+       
+</style>
+
+
+    
+
+
+
+
+</head>
+<body>
+    
+    <img id="iphone" src="rIphone.jpg" height="700">
+    <img id="logo" src="activate.png">
+    
+  
+    <div id="btn1">
+    <img src="knapper/Connect_device.png" height="45px" width="145px">
+    </div>  
+    
+    <div id="btn2">
+    <img src="knapper/Weight.png" height="45px" width="145px">
+    </div>  
+    
+    <div id="btn3">
+    <img src="knapper/Settings.png" height="45px" width="145px">
+        
+      
+    </div>  
+    
+    <div id="btn4">
+    <img src="knapper/Meals.png" height="45px" width="145px">
+    </div>  
+    
+    <div id="btn5">
+    <img src="knapper/Rankings.png" height="45px" width="145px">
+    </div>  
+    
+    <div id="btn6">
+    <img src="knapper/Music.png" height="45px" width="145px">
+    </div>  
+    
+    <div id="btn7">
+    <img src="knapper/account.png" height="45px" width="145px">
+    </div>   
+    
+    <div id="btn8">
+    <img src="knapper/Info.png" height="45px" width="145px">
+    </div> 
+    
+    <div id="txt"></div>
+    
+    <div id="btnBack"> </div>
+    
+    <script>
+    var btn1 = document.getElementById("btn1");
+    var btn2 = document.getElementById("btn2");
+    var btn3 = document.getElementById("btn3");
+    var btn4 = document.getElementById("btn4");
+    var btn5 = document.getElementById("btn5");
+    var btn6 = document.getElementById("btn6");
+    var btn7 = document.getElementById("btn7");
+    var btn8 = document.getElementById("btn8");
+        
+    var txt = document.getElementById("txt");
+    var btnBack = document.getElementById("btnBack")
+        
+    btn1.onclick = function(){
+        btn2.innerHTML = " ";
+        btn3.innerHTML = " ";
+        btn4.innerHTML = "";
+        btn5.innerHTML = " ";
+        btn6.innerHTML = " ";
+        btn7.innerHTML = " ";
+        btn8.innerHTML = " ";
+        txt.innerHTML = "<img src='knapper/bluetooth.png' height='400px'>";
+        btnBack.innerHTML = '<img src="knapper/Go_back.png" height="45px" width="145px">';
+    } 
+    btn2.onclick = function(){
+        btn1.innerHTML = "<img src='knapper/Weight.png' height='45px' width='145px'>"
+        btn2.innerHTML = " ";
+        btn3.innerHTML = " <br><br><br>";
+        btn4.innerHTML = "  <input type='number' placeholder='45kg'>";
+        btn5.innerHTML = " <br><br><br><img src='knapper/start.png' height='45px' width='145px'>";
+        btn6.innerHTML = " <br><br><br><br><br><br>";
+        btn7.innerHTML = " ";
+        btn8.innerHTML = " ";
+        txt.innerHTML = " <br><br><br><br><br><br><br><br><br><br><br><br>";
+        btnBack.innerHTML = '<img src="knapper/Go_back.png" height="45px" width="145px">';
+       
+    } 
+    btn3.onclick = function(){
+        btn1.innerHTML = "<img src='knapper/Settings.png' height='45px' width='145px'>"
+        btn2.innerHTML = "<img src='knapper/Accessibility.png' height='45px' width='145px'>";
+        btn3.innerHTML = "<img src='knapper/Safeword.png' height='45px' width='145px'>";
+        btn4.innerHTML = "<img src='knapper/Notifications.png' height='45px' width='145px'>";
+        btn5.innerHTML = " <img src='knapper/Privacy.png' height='45px' width='145px'>";
+        btn6.innerHTML = "<img src='knapper/Voice.png' height='45px' width='145px'>";
+        btn7.innerHTML = "<img src='knapper/Language.png' height='45px' width='145px'>";
+        btn8.innerHTML = " <br>";
+        txt.innerHTML = " <br><br><br><br><br><br><br><br><br>";
+        btnBack.innerHTML = '<img src="knapper/Go_back.png" height="45px" width="145px">';
+       
+    }
+    
+    btn4.onclick = function(){
+        btn1.innerHTML = "<img src='knapper/Meals.png' height='45px' width='145px'>"
+        btn2.innerHTML = " <br><br><br>";
+        btn3.innerHTML = " <img src='knapper/hummus.png' height='60px' width='180px'>";
+        btn4.innerHTML = " <br>";
+        btn5.innerHTML = " <img src='knapper/tomato.png' height='60px' width='180px'>";
+        btn6.innerHTML = " <br>";
+        btn7.innerHTML = " <img src='knapper/chicken.png' height='60px' width='180px'>";
+        btn8.innerHTML = " <br><br><br>";
+        txt.innerHTML = "<br><br><br><br><br><br><br><br><br>";
+        btnBack.innerHTML = '<img src="knapper/Go_back.png" height="45px" width="145px">';
+       
+
+    } 
+    btn5.onclick = function(){
+        btn1.innerHTML = "<img src='knapper/Rankings.png' height='45px' width='145px'> "
+        btn2.innerHTML = " ";
+        btn3.innerHTML = "<br><br><br><br><img src='knapper/Local.png' height='45px' width='145px'> ";
+        btn4.innerHTML = " <img src='knapper/Worldwide.png' height='45px' width='145px'>";
+        btn5.innerHTML = " <img src='knapper/Celebrities.png' height='45px' width='145px'><br><br><br><br>";
+        btn6.innerHTML = " ";
+        btn7.innerHTML = " ";
+        btn8.innerHTML = " ";
+        txt.innerHTML = "<br><br><br><br><br><br><br><br><br><br><br><br>";
+        btnBack.innerHTML = '<img src="knapper/Go_back.png" height="45px" width="145px">';
+    } 
+    btn6.onclick = function(){
+        btn1.innerHTML = "<img src='knapper/Music.png' height='45px' width='145px'> "
+        btn2.innerHTML = " ";
+        btn3.innerHTML = " <br><br><br><br><br><br><img src='spotify.png' height='70px' >";
+        btn4.innerHTML = " ";
+        btn5.innerHTML = " ";
+        btn6.innerHTML = "<br><br><img src='appleMusic.png' height='70px'><br><br><br><br>";
+        btn7.innerHTML = " ";
+        btn8.innerHTML = " ";
+        txt.innerHTML = "<br><br><br><br><br><br><br><br><br><br>";
+        btnBack.innerHTML = '<img src="knapper/Go_back.png" height="45px" width="145px">';
+    } 
+    btn7.onclick = function(){
+        btn1.innerHTML = "<img src='knapper/account.png' height='45px' width='145px'>"
+        btn2.innerHTML = " ";
+        btn3.innerHTML = " <img src='knapper/login.png' width='300px'>";
+        btn4.innerHTML = " ";
+        btn5.innerHTML = " ";
+        btn6.innerHTML = " ";
+        btn7.innerHTML = " ";
+        btn8.innerHTML = " ";
+        txt.innerHTML = "<br><br><br><br><br><br><br>";
+        btnBack.innerHTML = '<img src="knapper/Go_back.png" height="45px" width="145px">';
+
+    } 
+    btn8.onclick = function(){
+        btn1.innerHTML = "<img src='knapper/info.png' height='45px' width='145px'><br><br>"
+        btn2.innerHTML = " ";
+        btn3.innerHTML = " ";
+        btn4.innerHTML = " ";
+        btn5.innerHTML = " ";
+        btn6.innerHTML = " ";
+        btn7.innerHTML = " ";
+        btn8.innerHTML = " ";
+        txt.innerHTML = "<br><br><br><br><br><br><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut elit est. Duis id finibus urna. Phasellus volutpat velit ut eleifend consectetur. Suspendisse porttitor ex id dolor ultricies pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus blandit eleifend risus at auctor. Maecenas lacinia rutrum gravida. Morbi sit amet vestibulum risus, sit amet pharetra ipsum. Nulla quis accumsan metus.<br><br>Sed varius mi nec leo fermentum, a pharetra metus dignissim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec id libero ut purus facilisis sodales ac eget leo. Sed varius odio ante, sit amet cursus nunc eleifend at. Phasellus at lectus vel augue sollicitudin consectetur. Aliquam a mollis eros.<br><br><br>";
+        btnBack.innerHTML = '<img src="knapper/Go_back.png" height="45px" width="145px">';
+        
+    } 
+    btnBack.onclick = function(){
+        btn1.innerHTML = "<img src='knapper/Connect_device.png' height='45px' width='145px'>"
+        btn2.innerHTML = "<img src='knapper/Weight.png' height='45px' width='145px'>";
+        btn3.innerHTML = "<img src='knapper/Settings.png' height='45px' width='145px'>";
+        btn4.innerHTML = "<img src='knapper/Meals.png' height='45px' width='145px'>";
+        btn5.innerHTML = "<img src='knapper/Rankings.png' height='45px' width='145px'>";
+        btn6.innerHTML = "<img src='knapper/Music.png' height='45px' width='145px'>";
+        btn7.innerHTML = "<img src='knapper/account.png' height='45px' width='145px'>";
+        btn8.innerHTML = "<img src='knapper/info.png' height='45px' width='145px'>";
+        txt.innerHTML = " ";
+        btnBack.innerHTML = " ";
+    }
+    </script>
+    
+</body>
+</html>
